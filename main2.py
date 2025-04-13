@@ -105,7 +105,7 @@ def print_group_metric_table(group_key, athletes, metric, metric_label):
     top_athletes = sorted_athletes[:3]
 
     # Print header for this table.
-    print("\n" + "-" * 50)
+    print("-" * 50)
     print(f"Top 3 {sex} {weightclass} {division} {metric_label.upper()}")
     print("-" * 50)
 
@@ -159,9 +159,9 @@ def main():
     for group_key in sorted_group_keys:
         athletes = groups[group_key]
         # Print a separator between different groups.
-        print("\n" + "=" * 70)
+        print("=" * 70)
         print(f"Category: {group_key[0]} {group_key[1]} {group_key[2]}")
-        print("=" * 70 + "\n")
+        print("=" * 70)
 
         for metric, metric_label in metrics:
             print_group_metric_table(group_key, athletes, metric, metric_label)

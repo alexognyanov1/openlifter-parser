@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSV Upload and Parse</title>
+</head>
+
+<body>
+  <h1>Upload CSV File</h1>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Upload">
+  </form>
+  <h2>Output</h2>
+  <textarea rows="15" cols="80" readonly>{{ output }}</textarea>
+</body>
+
+</html>
